@@ -1,0 +1,30 @@
+<view class='addContainer'>
+  <block wx:for='{{addresses}}' wx:for-item='address' wx:key='unique'>
+    <view class='address'>
+      <image class='location' src='/images/icon/location.png'></image>
+      <view class='consignee'>收货人：{{address.consignee}}</view>
+      <view class='phoneNumber'>{{address.phoneNumber}}</view>
+      <view class='detailedAddress'>收货地址：{{address.detailedAddress}}</view>
+      <view class='editColumn'>
+        <view class='setDefault' bindtap='setDefault'>
+          <image bindtap='setDefault' src='{{address.isDefault ? "/images/icon/checked.png" : "/images/icon/check_box.png"}}'></image>
+          <text>设为默认</text>
+        </view>
+        <view class='delete'>
+          <image src='/images/icon/address/delete_black.png'></image>
+          <text>删除</text>
+        </view>
+        <view class='edit'>
+          <image src='/images/icon/address/edit.png'></image>
+          <text>编辑</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<view class='newAddress'>
+  新增地址
+</view>
+

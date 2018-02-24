@@ -1,0 +1,44 @@
+<!-- <image src='/images/decoration/line01.png' class='dividingLine'></image> -->
+<view wx:if='{{hasItem}}'>
+  <view class='cartContainer'>
+    <block wx:for='{{products}}' wx:for-item='product' wx:key='unique'>
+      <view class='cartItem'>
+        <image bindtap='switchSelect' data-index='{{index}}' data-id='{{index}}' src='{{product.isSelect ? "/images/icon/checked.png" : "/images/icon/check_box.png"}}' class='checkBox'></image>   
+        <image src='{{product.productImgPath}}' class='productImg'></image>
+        <view class='purchaseDetails'>
+          <text class='productName'>{{product.productName}}</text>
+          <!-- <text class='productDescription'>{{product.productDescription}}</text> -->
+          <text class='numberOfProduct'>数量</text>
+          <view class='reduceTheNumber'>
+            <image src='/images/icon/minus.png' bindtap='minusCount' data-index='{{index}}'></image>
+          </view>
+          <view class='theNumber'>
+            <text>{{product.productNum}}</text>
+          </view>
+          <view class='increaseTheNumber'>
+            <image src='/images/icon/plus.png' bindtap='addCount' data-index='{{index}}'></image>
+          </view>
+          <text class='productPrice'>¥ {{product.productPrice}}</text>
+          <image src='/images/icon/delete.png' class='deleteBtn' bindtap='removeItem'></image>
+          <text class='slaesVolume'>月销量：{{product.slaesVolume}}件</text>
+          <text class='quantity'>×{{product.productNum}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='footer'>
+    <image bindtap='allSelect' src='{{isAllSelect ? "/images/icon/checked.png" : "/images/icon/check_box.png"}}' class='checkBox'></image>
+    <view class='textContainer'>
+      <text class='selectAll'>全选</text>
+      <text class='totalPrice'>合计： ¥ {{totalMoney}}</text>
+      <text class='postage'>含运费：¥ 5.00</text>
+    </view>
+    <view class='billing'>
+      结算
+    </view>
+  </view>
+</view>
+<view wx:else class='cartEmpty'>
+  <text>购物车是空的，快去添加商品吧~</text>
+</view>

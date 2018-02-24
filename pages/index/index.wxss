@@ -1,0 +1,108 @@
+page{
+  background-color: #f1f1f1;
+}
+
+/* 轮播图样式 */
+swiper{
+  width: 100%;
+  height: 500rpx;
+}
+swiper image{
+  width: 100%;
+  height: 500rpx;
+}
+
+/* 热销产品样式 */
+.hotProducts{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.sectionTitle{
+  width: 700rpx;
+  height: 70rpx;
+  padding-top: 10rpx;
+  padding-left: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 42rpx;
+  background-color: #fff;
+}
+.hotItem{
+  width: 710rpx;
+  height: 355rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50rpx;
+  background-color: #fff;
+}
+.itemPicture{
+  width: 355rpx;
+  height: 355rpx;
+}
+.itemDetail{
+  width: 335rpx;
+  height: 355rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.leftSpacing{
+  margin-left: 20rpx;
+}
+.rightSpacing{
+  margin-right: 20rpx;
+  align-items: flex-end;
+}
+.keepRight{
+  text-align: right;
+}
+.itemName{
+  font-size: 30rpx;
+  width: 335rpx;
+  height: 120rpx;
+  overflow: hidden; 
+  padding-top: 15rpx; 
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+.itemPrice{
+  color: #ff0033;
+  font-size: 40rpx;
+  width: 335rpx;
+  padding-top: 20rpx;
+}
+.addToCart{
+  height: 100rpx;
+  width: 100rpx;
+  background-color: #ff0033;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  position: absolute;
+  bottom: 15rpx;
+}
+.cartIcon{
+  height: 60rpx;
+  width: 60rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx 
+}
+
+/* 预约上线样式 */
+.preSaleProducts{
+  margin: 0 20rpx 0 20rpx;
+  width: 710rpx;
+}
+.preSaleScroll{
+  height: 335rpx;
+  width: 710rpx;
+  white-space: nowrap;
+  display: flex;
+  overflow: scroll;
+}
+.preSaleItem{
+  height: 335rpx;
+  width: 335rpx;
+  display: inline-block;
+}

@@ -1,0 +1,40 @@
+<view class='navbar'>
+  <text wx:for='{{navbar}}' data-idx='{{index}}' class='item {{currentTab == index ? "active" : ""}}' wx:key='unique' bindtap='navbarTap'>{{item}}</text>
+</view>
+
+<view hidden='{{currentTab !== 0}}'>
+  <view class='order'>
+    <view class='title'>
+      <text class='serialNum'>订单编号 2000000321326</text>
+      <text class='paymentStatus'>未付款</text>
+    </view>
+    <block wx:for='{{products}}' wx:for-item='product' wx:key='unique'>
+      <view class='orderItem'>
+        <image src='{{product.productImgPath}}' class='productImg'></image>
+        <view class='purchaseDetails'>
+          <view class='productName'>{{product.productName}}</view>
+          <view class='productPrice'>¥ {{product.productPrice}}</view>
+          <!-- <view  class='productDescription'>{{product.productDescription}}</view> -->
+          <view  class='quantity'>×1</view>
+          <view  class='quantity orderStatus'>待付款</view>
+        </view>
+      </view>
+    </block>
+    <view class='sum'>
+      <text>共 2 件商品</text>
+      <text class='totalPrice'>合计：¥ 28.6</text>
+    </view>
+  </view>
+</view>
+
+<view hidden='{{currentTab !== 1}}'>
+  02
+</view>
+
+<view hidden='{{currentTab !== 2}}'>
+  03
+</view>
+
+<view hidden='{{currentTab !== 3}}'>
+  04
+</view>

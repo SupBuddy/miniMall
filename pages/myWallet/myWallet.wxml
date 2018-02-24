@@ -1,0 +1,32 @@
+<view class='walletContainer'>
+  <view class='item'>
+    <image src='/images/icon/wallet/recharge.png'></image>
+    <label>可用余额</label>
+    <text>666.02 元</text>
+  </view>
+  <view class='item'>
+    <image src='/images/icon/wallet/goods.png'></image>
+    <label>消费总额</label>
+    <text>200.88 元</text>
+  </view>
+  <view class='item'>
+    <image src='/images/icon/wallet/lock.png'></image>
+    <label>冻结金额</label>
+    <text>122.00 元</text>
+  </view>
+  <view class='item'>
+    <image src='/images/icon/wallet/deposit.png'></image>
+    <label>押金</label>
+    <text>200.00 元</text>
+  </view>
+  <view class='item'>
+    <image src='/images/icon/wallet/sponsor.png'></image>
+    <label>提现额</label>
+    <text>100.66 元</text>
+  </view>
+  <view class='item'>
+    <image src='/images/icon/wallet/crown.png'></image>
+    <label>积分</label>
+    <text>168</text>
+  </view>
+</view>

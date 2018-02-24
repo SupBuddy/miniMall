@@ -1,0 +1,75 @@
+
+<view>
+
+  <!-- 轮播图 -->
+  <swiper autoplay='true' interval='5000' indicator-dots='true' circular='true'>
+    <swiper-item>
+      <image src='/images/swiper/01.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/swiper/02.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/swiper/03.jpg'></image>
+    </swiper-item>
+  </swiper>
+  
+  <!-- 热销商品 -->
+  <view class='hotProducts'>
+    <view class='sectionTitle'>
+      <text>热销产品</text> 
+    </view>
+    <view class='hotItem'>
+      <image class='itemPicture' src='/images/items/i03.jpg'></image>
+      <view class='itemDetail leftSpacing'>
+        <view class='itemName'>Carver 陆地冲浪板 大鱼板 Firefly</view>
+        <view class='itemPrice'>¥2090.00</view>
+        <view class='addToCart'>
+          <image src='/images/icon/cart_white.png' class='cartIcon'></image>
+        </view>
+      </view>
+    </view>
+    <view class='hotItem'> 
+      <view class='itemDetail rightSpacing'>
+        <view class='itemName keepRight'>蓝色百事可乐</view>
+        <view class='itemPrice keepRight'>¥16.80</view>
+        <view class='addToCart'>
+          <image src='/images/icon/cart_white.png' class='cartIcon'></image>
+        </view>
+      </view>
+      <image class='itemPicture' src='/images/items/i04.jpg'></image>
+    </view>
+     <view class='hotItem'>
+      <image class='itemPicture' src='/images/items/i05.jpg'></image>
+      <view class='itemDetail leftSpacing'>
+        <view class='itemName'>榙榙草莓干 50g</view>
+        <view class='itemPrice'>¥11.80</view>
+        <view class='addToCart'>
+          <image src='/images/icon/cart_white.png' class='cartIcon'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 预约上线 -->
+  <view class='preSaleProducts'>
+    <view class='sectionTitle'>
+      <text>新品上线</text> 
+    </view>
+    <scroll-view class='preSaleScroll' scroll-x='true'>
+      <view id='pre01' class='preSaleItem'>
+        <image class='itemPicture' src='/images/items/i06.jpg'></image>
+      </view>
+      <view id='pre02' class='preSaleItem'>
+        <image class='itemPicture' src='/images/items/i10.jpg'></image>
+      </view>
+      <view id='pre03' class='preSaleItem'>
+        <image class='itemPicture' src='/images/items/i09.jpg'></image>
+      </view>
+      <view id='pre04' class='preSaleItem'>
+        <image class='itemPicture' src='/images/items/i11.jpg'></image>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

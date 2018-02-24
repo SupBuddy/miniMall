@@ -1,0 +1,129 @@
+<view class='header'>
+  <image src='/images/icon/code.png' class='qrCode'></image>
+  <view class='userInfo'>
+    <text class='userName'>用户ID示例</text>
+    <text class='phoneNum'>15812346666</text>
+  </view>
+  <image src='{{userInfo.avatarUrl}}' class='userAvatar'></image>
+</view>
+
+<view class='section'>
+  <navigator url='/pages/myWallet/myWallet'>
+    <view class='item'>
+      <image src='/images/icon/money.png' class='itemIcon'></image>
+      <label>我的钱包</label>
+      <image src='/images/icon/enterinto.png' class='enterIcon'></image>
+    </view>
+  </navigator>
+</view>
+<view class='section'>
+  <navigator url='/pages/myOrders/myOrders'>
+    <view class='item'>
+      <image src='/images/icon/order.png' class='itemIcon'></image>
+      <label>我的订单</label>
+      <image src='/images/icon/enterinto.png' class='enterIcon'></image>
+    </view>
+  </navigator>
+  <navigator url="/pages/myAddresses/myAddresses">
+    <view class='item'>
+      <image src='/images/icon/location.png' class='itemIcon'></image>
+      <label>我的地址</label>
+      <image src='/images/icon/enterinto.png' class='enterIcon'></image>
+    </view>
+  </navigator>
+</view>
+<view class='section'>
+  <view class='item'>
+    <image src='/images/icon/we.png' class='itemIcon'></image>
+    <label>关于我们</label>
+    <image src='/images/icon/enterinto.png' class='enterIcon'></image>
+  </view>
+</view>
+
+
+<!-- <view class='dahezi'>
+  <view class='tou'>
+    <view class="touxian">
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+
+    <view class="erweima">
+      <image style='' src='/images/icon/code.png'></image>
+    </view>
+
+    <view class='buttonText'>
+      <view>
+        <text>123123123123</text>
+      </view>
+      <view>
+        <text>15887044060</text>
+      </view>
+    </view>
+  </view>
+
+ 
+
+
+
+  <view class='tiao'>
+    <view class='tubiao01'>
+      <image src='/images/icon/financial_fill.png'></image>
+    </view>
+
+    <view class='tubiao02'>
+      <image src='/images/icon/enterinto.png'></image>
+    </view>
+
+    <view class='dingdan'>
+      <text>我的钱包</text>
+    </view>
+  </view>
+
+
+  <view class='tiao01'>
+    <view class='tubiao01'>
+      <image src='/images/icon/dingdan.png'></image>
+    </view>
+
+    <view class='tubiao02'>
+      <image src='/images/icon/enterinto.png'></image>
+    </view>
+
+    <view class='dingdan'>
+      <text>我的订单</text>
+    </view>
+  </view>
+
+
+  <view class='tiao'>
+    <view class='tubiao01'>
+      <image src='/images/icon/dizhi.png'></image>
+    </view>
+
+    <view class='tubiao02'>
+      <image src='/images/icon/enterinto.png'></image>
+    </view>
+
+    <navigator url="/pages/myAddresses/myAddresses">
+      <view class='dingdan'>
+        <text>我的地址</text>
+      </view>
+    </navigator>
+  </view>
+
+
+  <view class='tiao04'>
+    <view class='tubiao01'>
+      <image src='/images/icon/group_fill.png'></image>
+    </view>
+
+    <view class='tubiao02'>
+      <image src='/images/icon/enterinto.png'></image>
+    </view>
+
+    <view class='dingdan'>
+      <text>关于我们</text>
+    </view>
+  </view>
+
+</view> -->

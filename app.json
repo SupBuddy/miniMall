@@ -5,6 +5,7 @@
     "pages/shoppingCart/shoppingCart",
     "pages/logs/logs",
     "pages/myAddresses/myAddresses",
+    "pages/addAddress/addAddress",
     "pages/myWallet/myWallet",
     "pages/myOrders/myOrders",
     "pages/cart/cart"
@@ -35,7 +36,7 @@
       {
         "selectedIconPath": "images/icon/people_fill.png",
         "iconPath": "images/icon/people.png",
-        "pagePath": "pages/cart/cart",
+        "pagePath": "pages/myPage/myPage",
         "text": "我的"
       }
     ]

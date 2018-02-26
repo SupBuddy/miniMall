@@ -5,86 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    hasItem: true,
     isAllSelect: false,
-    totalMoney: 0,
-    products: [
-      {
-        isSelect: false,
-        productImgPath: '/images/items/i04.jpg',
-        productName: '蓝色百事可乐',
-        productDescription: '热处理风味酸奶 高端畅饮',
-        productPrice: 16.80,
-        productNum: 1,
-        slaesVolume: '888'
-      },
-      {
-        isSelect: false,
-        productImgPath: '/images/items/i05.jpg',
-        productName: '榙榙草莓干 50g',
-        productDescription: '热处理风味酸奶 高端畅饮',
-        productPrice: 11.80,
-        productNum: 1,
-        slaesVolume: '666'
-      }
-    ]
+    totalMoney: 0
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
   
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      hasItem: true,
+      products: [
+        {
+          isSelect: false,
+          productImgPath: '/images/items/i04.jpg',
+          productName: '蓝色百事可乐',
+          productDescription: '热处理风味酸奶 高端畅饮',
+          productPrice: 16.80,
+          productNum: 1,
+          slaesVolume: '888'
+        },
+        {
+          isSelect: false,
+          productImgPath: '/images/items/i05.jpg',
+          productName: '榙榙草莓干 50g',
+          productDescription: '热处理风味酸奶 高端畅饮',
+          productPrice: 11.80,
+          productNum: 1,
+          slaesVolume: '666'
+        }
+      ]
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
   
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  },
 
   switchSelect(e){
     const idx = e.currentTarget.dataset.index;

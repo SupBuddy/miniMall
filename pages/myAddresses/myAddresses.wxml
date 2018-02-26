@@ -23,8 +23,8 @@
   </block>
 </view>
 
-
+<navigator url='../addAddress/addAddress'>
 <view class='newAddress'>
   新增地址
 </view>
-
+</navigator>

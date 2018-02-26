@@ -1,7 +1,7 @@
 <view class='header'>
   <image src='/images/icon/code.png' class='qrCode'></image>
   <view class='userInfo'>
-    <text class='userName'>用户ID示例</text>
+    <text class='userName'>{{userInfo.nickName}}</text>
     <text class='phoneNum'>15812346666</text>
   </view>
   <image src='{{userInfo.avatarUrl}}' class='userAvatar'></image>

@@ -182,4 +182,5 @@ page{
   font-size: 30rpx;
   text-align: center;
   line-height: 800rpx;
+  color: #999;
 }

@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-var order = ['pre01', 'pre02', 'pre03', 'pre04', 'pre01']
+// var order = ['pre01', 'pre02', 'pre03', 'pre04', 'pre01']
 Page({
   data: {
     motto: 'Hello World',
@@ -12,11 +12,11 @@ Page({
     scrollTop: 100
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  // bindViewTap: function() {
+  //   wx.navigateTo({
+  //     url: '../logs/logs'
+  //   })
+  // },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

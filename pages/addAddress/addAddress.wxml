@@ -1,0 +1,48 @@
+<view class='addContainer'>
+  <input class='item' placeholder='收件人姓名'></input>
+  <input class='item' placeholder='电话号码' type='number'></input>
+  <view class='item'>
+    <label>所在地区</label>
+    <div class='district' bindtap='selectDistrict'>{{areaInfo}}</div>
+    <image src='/images/icon/right.png' bindtap='selectDistrict'></image>
+  </view>
+  <input class='item' placeholder='详细地址'></input>
+  <view class='item'>
+    <label>设为默认</label>
+    <switch></switch>
+  </view>
+</view> 
+
+
+
+<!-- <view style="position:fixed ;top:40%;box-sizing:border-box;padding:20rpx;text-align:center;width:100%">
+  <view style="padding-bottom:20rpx">{{areaInfo}}</view>
+  <button bindtap="selectDistrict">选择城市</button>
+</view> -->
+
+<view class="dialog-mask " style="z-index:11;visibility:{{addressMenuIsShow ? 'visible': 'hidden'}}" bindtap="hideCitySelected" />
+<view class="picker-view" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+  <view style="height:10% ;width:95%;margin-top:10rpx">
+    <text catchtap="cityCancel">取消</text>
+    <text style="float: right" catchtap="citySure">确定</text>
+  </view>
+  <!--"可以显示默认的城市，使用后级联选择城市反应很慢就不使用了-->
+  <picker-view style="width: 100%; height: 300px;" bindchange="cityChange" value="{{value}}" wx:key="">
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="unique" class="picker-item">
+        {{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" class="picker-item" wx:key="">
+        {{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{areas}}" class="picker-item" wx:key="">
+        {{item.name}}</view>
+    </picker-view-column> 
+  </picker-view>
+</view>
+
+<view class='submitBtn'>
+  保存地址
+</view>

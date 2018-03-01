@@ -20,7 +20,7 @@
           </view>
           <text class='productPrice'>¥ {{product.productPrice}}</text>
           <image src='/images/icon/delete.png' class='deleteBtn' bindtap='removeItem'></image>
-          <text class='slaesVolume'>月销量：{{product.slaesVolume}}件</text>
+          <!-- <text class='slaesVolume'>月销量：{{product.slaesVolume}}件</text> -->
           <text class='quantity'>×{{product.productNum}}</text>
         </view>
       </view>
@@ -32,7 +32,7 @@
     <view class='textContainer'>
       <text class='selectAll'>全选</text>
       <text class='totalPrice'>合计： ¥ {{totalMoney}}</text>
-      <text class='postage'>含运费：¥ 5.00</text>
+      <!-- <text class='postage'>含运费：¥ 5.00</text> -->
     </view>
     <view class='billing'>
       结算

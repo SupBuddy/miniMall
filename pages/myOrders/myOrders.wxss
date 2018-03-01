@@ -17,7 +17,7 @@ page{
  line-height: 80rpx; 
 } 
 .navbar .item.active{ 
- color: #ff0090; 
+ color: #ff0033; 
 } 
 .navbar .item.active:after{ 
  content: ""; 
@@ -105,7 +105,7 @@ page{
 }
 .orderStatus{
   float: right;
-  color: #ff0090;
+  color: #ff0033;
 }
 .sum{
   height: 80rpx;

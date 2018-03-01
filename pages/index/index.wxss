@@ -26,6 +26,7 @@ swiper image{
   padding-top: 10rpx;
   padding-left: 10rpx;
   margin-bottom: 20rpx;
+  border-radius: 6px;
   font-size: 42rpx;
   background-color: #fff;
 }

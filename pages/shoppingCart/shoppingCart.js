@@ -5,8 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isAllSelect: false,
-    totalMoney: 0
+    
   },
 
   
@@ -17,6 +16,8 @@ Page({
   onShow: function () {
     this.setData({
       hasItem: true,
+      isAllSelect: false,
+      totalMoney: 0,
       products: [
         {
           isSelect: false,
@@ -46,9 +47,26 @@ Page({
     const idx = e.currentTarget.dataset.index;
     let products = this.data.products;
     const isSelect = products[idx].isSelect;
+    let isAllSelect = this.data.isAllSelect;
     products[idx].isSelect = !isSelect;
+    if ( products[idx].isSelect ){
+      for (let i = 0; i < products.length; i++){
+        if (products[i].isSelect != products[idx].isSelect){
+          isAllSelect = false;
+          break;
+        }
+        else {
+          isAllSelect = true;
+        }
+      }
+    }
+    else {
+      isAllSelect = false;
+    }
+
     this.setData({
-      products: products
+      products: products,
+      isAllSelect: isAllSelect
     });
     this.getTotalPrice();
   },

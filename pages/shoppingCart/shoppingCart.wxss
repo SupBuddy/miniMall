@@ -15,130 +15,127 @@ page{
   overflow: scroll;
 }
 .cartItem{
-  width: 700rpx;
+  width: 690rpx;
   height: 200rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 20rpx;
-  padding: 0 25rpx;
+  padding: 0 30rpx;
   background-color: #fdfbfb;
 }
 .checkBox{
-  width: 28rpx;
-  height: 28rpx;
-  margin-right: 18rpx;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
 }
 .productImg{
   width: 200rpx;
   height: 200rpx;
 }
 .purchaseDetails{
-  width: 454rpx;
+  width: 440rpx;
   height: 200rpx;
   position: relative;
+  font-size: 30rpx;
 }
 .productName{
-  font-size: 24rpx;
   position: absolute;
-  top: 38rpx;
+  top: 10rpx;
   left: 24rpx;
 }
-.productDescription{
+/* .productDescription{
   font-size: 18rpx;
   color: #a9a9a9;
   position: absolute;
   top: 70rpx;
   left: 24rpx;
-}
+} */
 .numberOfProduct{
-  font-size: 24rpx;
   color: #a9a9a9;
   position: absolute;
-  top: 100rpx;
+  top: 92rpx;
   left: 24rpx;
 }
 .reduceTheNumber{
-  width: 36rpx;
-  height: 36rpx;
+  width: 40rpx;
+  height: 40rpx;
   border: 1rpx solid #bfbfbf;
   position: absolute;
-  top: 98rpx;
-  left: 78rpx;
+  top: 90rpx;
+  left: 100rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .reduceTheNumber image{
-  width: 21rpx;
-  height: 21rpx;
+  width: 25rpx;
+  height: 25rpx;
 }
 .theNumber{
   width: 100rpx;
-  height: 36rpx;
+  height: 40rpx;
   border: 1rpx solid #bfbfbf;
   position: absolute;
-  top: 98rpx;
-  left: 114rpx;
-  font-size: 24rpx;
+  top: 90rpx;
+  left: 140rpx;
   color: #a9a9a9;
   line-height: 36rpx;
   text-align: center;
 }
 .increaseTheNumber{
-  width: 36rpx;
-  height: 36rpx;
+  width: 40rpx;
+  height: 40rpx;
   border: 1rpx solid #bfbfbf;
   position: absolute;
-  top: 98rpx;
-  left: 214rpx;
+  top: 90rpx;
+  left: 240rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .increaseTheNumber image{
-  width: 21rpx;
-  height: 21rpx;
+  width: 25rpx;
+  height: 25rpx;
 }
 .productPrice{
-  font-size: 24rpx;
   color: #ff0033;
   position: absolute;
-  bottom: 18rpx;
+  bottom: 10rpx;
   left: 24rpx;
 }
 .deleteBtn{
   width: 37rpx;
   height: 43rpx;
   position: absolute;
-  top: 80rpx;
+  top: 90rpx;
   right: 0;
 }
-.slaesVolume{
+/* .slaesVolume{
   font-size: 24rpx;
   color: #a9a9a9;
   position: absolute;
   left: 166rpx;
   bottom: 18rpx;
-}
+} */
 .quantity{
-  font-size: 24rpx;
   color: #a9a9a9;
   position: absolute;
   right: 0;
-  bottom: 18rpx;
+  bottom: 10rpx;
 }
 
 .footer{
-  width: 730rpx;
+  width: 720rpx;
   height: 95rpx;
   position: fixed;
   bottom: 0;
-  padding-left: 20rpx;
+  padding-left: 30rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-top: 1rpx solid #a9a9a9;
+  font-size: 30rpx;
 }
 .textContainer{
   width: 482rpx;
@@ -148,29 +145,26 @@ page{
 .selectAll{
   position: absolute;
   left: 0;
-  top: 36rpx;
-  font-size: 24rpx;
+  top: 30rpx;
 }
 .totalPrice{
   position: absolute;
-  left: 290rpx;
-  top: 12rpx;
-  font-size: 24rpx;
+  left: 260rpx;
+  top: 30rpx;
   color: #ff0033;
 }
-.postage{
+/* .postage{
   position: absolute;
   left: 290rpx;
   bottom: 12rpx;
   font-size: 24rpx;
   color: #999;
-}
+} */
 
 .billing{
   width: 200rpx;
   height: 95rpx;
   background-color: #ff0033;
-  font-size: 30rpx;
   color: #fff;
   text-align: center;
   line-height: 95rpx;

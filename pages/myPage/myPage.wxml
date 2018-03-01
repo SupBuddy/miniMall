@@ -1,8 +1,9 @@
 <view class='header'>
-  <image src='/images/icon/code.png' class='qrCode'></image>
+  <!-- <image src='/images/icon/code.png' class='qrCode'></image> -->
   <view class='userInfo'>
     <text class='userName'>{{userInfo.nickName}}</text>
-    <text class='phoneNum'>15812346666</text>
+    <text class='editProfile'>查看并编辑个人资料</text>
+    <!-- <text class='phoneNum'>15812346666</text> -->
   </view>
   <image src='{{userInfo.avatarUrl}}' class='userAvatar'></image>
 </view>

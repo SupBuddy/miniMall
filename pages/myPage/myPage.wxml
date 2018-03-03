@@ -12,7 +12,7 @@
   <navigator url='/pages/myWallet/myWallet'>
     <view class='item'>
       <image src='/images/icon/money.png' class='itemIcon'></image>
-      <label>我的钱包</label>
+      <label>我的服务</label>
       <image src='/images/icon/enterinto.png' class='enterIcon'></image>
     </view>
   </navigator>

@@ -74,5 +74,5 @@
   position: fixed;
   bottom: 0;
   color: #fff;
-  background-color: #ff0090;
+  background-color: #ff0033;
 }

@@ -15,11 +15,6 @@
 
 
 
-<!-- <view style="position:fixed ;top:40%;box-sizing:border-box;padding:20rpx;text-align:center;width:100%">
-  <view style="padding-bottom:20rpx">{{areaInfo}}</view>
-  <button bindtap="selectDistrict">选择城市</button>
-</view> -->
-
 <view class="dialog-mask " style="z-index:11;visibility:{{addressMenuIsShow ? 'visible': 'hidden'}}" bindtap="hideCitySelected" />
 <view class="picker-view" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
   <view style="height:10% ;width:95%;margin-top:10rpx">

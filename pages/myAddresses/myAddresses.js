@@ -10,13 +10,13 @@ Page({
         isDefault: false,
         consignee: '静静',
         phoneNumber: '13766664321',
-        detailedAddress: '云南省昆明市官渡区大都摩天A座12层'
+        detailedAddress: '上海市浦东新区陆家嘴银城中路500号'
       },
       {
         isDefault: false,
         consignee: '小明',
         phoneNumber: '13956786666',
-        detailedAddress: '云南省昆明市官渡区关上金汁路100号城投综合楼A区15楼（顺兴时代正对面）'
+        detailedAddress: '上海市静安区延安中路1000号'
       }
     ]
   },
